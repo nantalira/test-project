@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <title>Kontak</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+
+    <body>
+        <header class="container-fluid mb-2 fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light .d-sm-none">
+                <a class="navbar-brand ms-auto me-auto" href="#"><img src="assets/logo.png" /></a>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light .d-sm-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ul-navbar" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html"><b>Profile</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#products"><b>Portfolio</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><b>Form Pemesanan</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./kontak.html"><b>Kontak</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main >
+            <!-- modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Form Pemesanan</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nama" class="form-label">Nama</label>
+                                    <input type="text" class="form-control" id="nama" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nohp" class="form-label">No. HP</label>
+                                    <input type="number" class="form-control" id="nohp" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="alamat" class="form-label">Alamat</label>
+                                    <input type="text" class="form-control" id="alamat" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="produk" class="form-label">Produk</label>
+                                    <select class="form-select" aria-label="Default select example" id="produk">
+                                        <option selected>Pilih Produk</option>
+                                        <option value="1">Sewa Studio</option>
+                                        <option value="2">Prewedding</option>
+                                        <option value="3">Sewa Peralatan</option>
+                                        <option value="3">Dokumentasi Acara</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="jumlah" class="form-label">Jumlah</label>
+                                    <input type="number" class="form-control" id="jumlah" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pembayaran" class="form-label">Pembayaran</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                                        <label class="form-check-label" for="flexRadioDefault1"> Cash </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+                                        <label class="form-check-label" for="flexRadioDefault2"> Transfer</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="catatan" class="form-label">Catatan</label>
+                                    <textarea class="form-control" id="catatan" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                        <label class="form-check-label" for="flexCheckDefault"> Saya Menyetujui Syarat dan Ketentuan </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal -->
+            <!-- maps -->
+            <div class="container text-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63375.28607313917!2d109.63948383854226!3d-6.895940724325068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70242ca490fe13%3A0xc0c68a126b258cb6!2sPekalongan%2C%20Pekalongan%20City%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1667729188467!5m2!1sen!2sid"
+                    width="100%" height="450" style="border:0; margin-top: 50px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- end maps -->
+            <!-- form -->
+            <div class="container">
+                <h3 class="text-center">Kontak kami</h3>
+                <div class="info">
+                    <form action="/">
+                        <ul class="list-style">
+                            <li><label for="name">Name</label></li>
+                            <li><input class="fname" type="text" name="name" placeholder="Full name"></li>
+                            <li><label for="email">Email</label></li>
+                            <li><input class="fname" type="text" name="name" placeholder="Email"></li>
+                            <li><label for="phone">Phone</label></li>
+                            <li>
+                                <input type="text" name="name" placeholder="Phone number">
+                            </li>
+                            <li><label for="subject">Subject</label></li>
+                            <li>
+                                <input type="text" name="subject" placeholder="Subject">
+                            </li>
+                            <li><label for="message">Message</label></li>
+                            <li>
+                                <textarea name="message" id="message" rows="4" cols="23"></textarea>
+                            </li>
+                            <button type="submit" href="/">Submit</button>
+                        </ul>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <!-- end form -->
+            <!-- sosmed -->
+            <div class="container text-center">
+                <h3>Our Social Media</h3>
+                <a href="https://wa.me/6288980609027" target="_blank">
+                    <img src="https://img.icons8.com/office/100/null/whatsapp--v1.png" />        
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100025602261691" target="_blank">
+                    <img src="https://img.icons8.com/color/100/null/facebook-new.png" />
+                </a>
+                <a href="https://www.instagram.com/wln_dri01/?hl=id" target="_blank">
+                    <img src="https://img.icons8.com/color/100/null/instagram-new--v1.png" />
+                </a>
+            </div>
+            <!-- end sosmed -->
+        </main>
+        <footer>
+            <div class="container text-center">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>2022</span></strong
+                    >. All Rights Reserved
+                </div>
+                <div class="credits">Designed by Wulandari</div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+        
+    </body>
+
+</html>
